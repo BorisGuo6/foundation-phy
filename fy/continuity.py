@@ -176,7 +176,7 @@ class ContinuityTestScene(BaseTestScene):
         Args:
             (bool): 
         """
-        # self.frame_violation_start = 20; return True
+        self.frame_violation_start = 20; return True
         less_strict = not(self.flags.render_violate_video) 
         # TODO: farthest point sampling, try reduce num of samples
         frame_end = self.flags.frame_end

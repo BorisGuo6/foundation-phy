@@ -49,7 +49,7 @@ RUN git clone https://github.com/blender/blender.git --branch blender-v2.93-rele
 
 RUN mkdir lib && \
     cd lib && \
-    svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/linux_centos7_x86_64
+    svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/linux_centos7_x86_64 
 
 RUN cd blender && \
     make update

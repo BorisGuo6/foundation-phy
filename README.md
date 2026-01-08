@@ -16,6 +16,7 @@ docker build -f docker/KubruntuDev.Dockerfile -t kubricdockerhub/kubruntudev:lat
 
 docker run --rm -it \
   --user 1000:1000 \
+  --gpus all \
   --volume "$PWD:/workspace" \
   --volume "$PWD/cache:/gcache" \
   --workdir "/workspace" \
